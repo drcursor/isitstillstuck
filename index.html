@@ -1,131 +1,229 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<title>Is it still stuck? Yes!</title>
-<style>
-.scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  .card {
-    flex: 0 0 auto;
-    padding: 2em;
-  }
-}
-</style>
-<link rel="shortcut icon" type="image/png" href="ship.png"/>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDFPXZFEF4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <meta name="theme-color" content="#7952b3">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
-  gtag('config', 'G-BDFPXZFEF4');
-</script>
+  <title>Is it still stuck? Yes!</title>
+  <style>
+    .scrolling-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      .scrollingcard {
+        flex: 0 0 auto;
+      }
+    }
+  </style>
+  <link rel="shortcut icon" type="image/png" href="ship.png" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDFPXZFEF4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BDFPXZFEF4');
+  </script>
 </head>
+
 <body>
-<br><br>
-<h1>yes !</h1>
-<h2>It's still stuck!</h2>
-<br><br>
-Click here to share: <br><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Want to know what&#39;s up with the Suez Canal ship ? Check out isitstillstuck.com #isitstillstuck #suez" data-hashtags="suezcanal" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p><br><p>
+  <div class="py-5 text-center">
+    <h1>yes !</h1>
+    <h2>It's still stuck!</h2>
+    <p>Click here to share: <br><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-size="large"
+        data-text="Want to know what&#39;s up with the Suez Canal ship ? Check out isitstillstuck.com #isitstillstuck #suez"
+        data-hashtags="suezcanal" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </p>
+    <img class="rounded" style="max-width: 80%; height: auto;" src="ship1.jpg">
+  </div>
 
-<img style="max-width: 500px; height: auto;" src="ship1.jpg">
-<p>Notice that the ship's name is Ever Given, not Evergreen like it's written on its side.</p>
-<h3>What is this about?</h3>
-<p>On March 23rd, a 220'000 tonne container ship got stuck on the Suez Canal. All shipping traffic is currently interrupted.</p>
-<p>Ships that decide to go around will take an extra 9 days longer for US destinations and 14 days longer for European destinations.</p>
-<h3>Facts</h3>
-<ul>
-<li>Ship name: Ever given</li>
-<li>Built: 2018</li>
-<li>Size: 400m long / 59m wide</li>
-<li>Gross tonnage: 219,079</li>
-<li>Capacity: 20,388 TEUs (20ft container equivalents)</li>
-<li>Owner : <a target="_blank" href="http://www.shoei-kisen.com/">Shoei Kisen Kaisha (Japan)</a></li>
-<li>Operated by : Evergreen Marine (Taiwan) - <a target="_blank" href="https://en.wikipedia.org/wiki/Evergreen_Marine">Wikipedia article</a>
-</ul>
-<h3>How much is this costing?</h3>
-<p>Besides all the extra time you will have to wait for your new CPU/GPU/ Japanese stationary to arrive, this will cost shipping companies millions of dollars.</p>
-<p>$9.6bn of daily ship traffic is currently interrupted</p>
-<h3>Real time position</h3>
-<script type="text/javascript">
-    // Map appearance
-    var width="60%";         // width in pixels or percentage
-    var height="400";         // height in pixels
-    var names=true;           // always show ship names (defaults to false)
+  <div class="container text-left border-bottom">
+    <p><small>Notice that the ship's name is Ever Given, not Evergreen like it's written on its side.</small></p>
+    <h3>What is this about?</h3>
+    <p class="lead">On March 23rd, a 220'000 tonne container ship got stuck on the Suez Canal. All shipping traffic is
+      currently interrupted.</p>
+    <p>Ships that decide to go around will take an extra 9 days longer for US destinations and 14 days longer for
+      European destinations.</p>
+    <h3>Facts</h3>
+    <ul>
+      <li>Ship name: Ever given</li>
+      <li>Built: 2018</li>
+      <li>Size: 400m long / 59m wide</li>
+      <li>Gross tonnage: 219,079</li>
+      <li>Capacity: 20,388 TEUs (20ft container equivalents)</li>
+      <li>Owner : <a href="http://www.shoei-kisen.com/">Shoei Kisen Kaisha (Japan)</a></li>
+      <li>Operated by : Evergreen Marine (Taiwan) - <a target="_blank"
+          href="https://en.wikipedia.org/wiki/Evergreen_Marine">Wikipedia article</a>
+    </ul>
 
-    // Single ship tracking
-    var imo="9811000";        // display latest position (by IMO, overrides MMSI)
-    var show_track=true;      // display track line (last 24 hours)
-</script>
-<script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+    <h3>How much is this costing?</h3>
+    <p>Besides all the extra time you will have to wait for your new CPU/GPU/ Japanese stationary to arrive, this will
+      cost shipping companies millions of dollars.</p>
+    <p>$9.6bn of daily ship traffic is currently interrupted</p>
+    <h3>Real time position</h3>
+    <script type="text/javascript">
+      // Map appearance
+      var width = "60%";         // width in pixels or percentage
+      var height = "400";         // height in pixels
+      var names = true;           // always show ship names (defaults to false)
 
-<p>You can check the real time position of the ship <a target="_blank" href="https://www.vesselfinder.com/?imo=9811000">here</a>.</p>
-<h3>Timeline</h3>
-<img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd6c748xw2pzm8.cloudfront.net%2Fprod%2F8863f760-8cc9-11eb-8365-072a5bcc3510-standard.png?dpr=1&fit=scale-down&quality=highest&source=next&width=700">
-<h3>News articles</h3>
-<ul>
-	<li><a target="_blank" href="https://www.reuters.com/article/us-egypt-suezcanal-ship/ship-blocking-suez-canal-like-beached-whale-could-be-stuck-for-weeks-idUSKBN2BH0BA">Ship blocking Suez Canal like 'beached whale' could be stuck for weeks</a></li>
-	<li><a target="_blank" href="https://www.bbc.com/news/world-middle-east-56522178">Suez Canal: Owner of cargo ship blocking waterway apologises</a></li>
-	<li><a target="_blank" href="https://www.theguardian.com/world/2021/mar/24/suez-canal-gridlock-could-raise-oil-prices-shipping-costs">The Guardian - Suez canal gridlock could raise oil prices and shipping costs</a></li>
-	<li><a target="_blank" href="https://edition.cnn.com/2021/03/24/middleeast/suez-canal-container-ship-intl-hnk/index.html">Suez Canal blocked by traffic jam after massive container ship runs aground</a></li>
-	<li><a target="_blank" href="https://www.lci.fr/international/video-le-canal-de-suez-toujours-bloque-par-un-cargo-de-400-metres-de-long-2181608.html">Le canal de Suez toujours bloqué par un cargo de 400 mètres de long</a></li>
-</ul>
+      // Single ship tracking
+      var imo = "9811000";        // display latest position (by IMO, overrides MMSI)
+      var show_track = true;      // display track line (last 24 hours)
+    </script>
+    <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
 
-<h3>View from space</h3>
+    <p>You can check the real time position of the ship <a target="_blank"
+        href="https://www.vesselfinder.com/?imo=9811000">here</a>.</p>
+    <h3>Timeline</h3>
+    <img
+      src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd6c748xw2pzm8.cloudfront.net%2Fprod%2F8863f760-8cc9-11eb-8365-072a5bcc3510-standard.png?dpr=1&fit=scale-down&quality=highest&source=next&width=700">
+    <h3>News articles</h3>
+    <ul>
+      <li><a target="_blank"
+          href="https://www.reuters.com/article/us-egypt-suezcanal-ship/ship-blocking-suez-canal-like-beached-whale-could-be-stuck-for-weeks-idUSKBN2BH0BA">Ship
+          blocking Suez Canal like 'beached whale' could be stuck for weeks</a></li>
+      <li><a target="_blank" href="https://www.bbc.com/news/world-middle-east-56522178">Suez Canal: Owner of cargo ship
+          blocking waterway apologises</a></li>
+      <li><a target="_blank"
+          href="https://www.theguardian.com/world/2021/mar/24/suez-canal-gridlock-could-raise-oil-prices-shipping-costs">The
+          Guardian - Suez canal gridlock could raise oil prices and shipping costs</a></li>
+      <li><a target="_blank"
+          href="https://edition.cnn.com/2021/03/24/middleeast/suez-canal-container-ship-intl-hnk/index.html">Suez Canal
+          blocked by traffic jam after massive container ship runs aground</a></li>
+      <li><a target="_blank"
+          href="https://www.lci.fr/international/video-le-canal-de-suez-toujours-bloque-par-un-cargo-de-400-metres-de-long-2181608.html">Le
+          canal de Suez toujours bloqué par un cargo de 400 mètres de long</a></li>
+    </ul>
 
-Images from <a target="_blank" href="https://twitter.com/AirbusSpace">Airbus Space</a>
-<div class="scrolling-wrapper">
-  <div class="card">
-    <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus1.jpg">
-  </div>
-  <div class="card">
-    <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus2.jpg">
-  </div>
-  <div class="card">
-    <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus3.jpg">
-  </div>
-</div>
-<h3>So many memes</h3>
+    <h3>View from space</h3>
 
-<div class="scrolling-wrapper">
-  <div class="card">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I made this. It&#39;s for you. <a href="https://t.co/WU4DzjTSUb">pic.twitter.com/WU4DzjTSUb</a></p>&mdash; Joe Streckert (@JoeStreckert) <a href="https://twitter.com/JoeStreckert/status/1375129180883480578?ref_src=twsrc%5Etfw">March 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <div class="card">
-     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Todays Comic: We are all, in our own little way, that ship. <a href="https://t.co/GVDjLxzErX">pic.twitter.com/GVDjLxzErX</a></p>&mdash; Chaz Hutton (@chazhutton) <a href="https://twitter.com/chazhutton/status/1374688225516748801?ref_src=twsrc%5Etfw">March 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <div class="card">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Having failed miserably with the cat, theyve now decided to give the dog a go! <a href="https://twitter.com/hashtag/Suez?src=hash&amp;ref_src=twsrc%5Etfw">#Suez</a> <a href="https://twitter.com/hashtag/SuezCrisis?src=hash&amp;ref_src=twsrc%5Etfw">#SuezCrisis</a> <a href="https://twitter.com/hashtag/SuezBlocked?src=hash&amp;ref_src=twsrc%5Etfw">#SuezBlocked</a> <a href="https://twitter.com/hashtag/SuezCanal?src=hash&amp;ref_src=twsrc%5Etfw">#SuezCanal</a> <a href="https://twitter.com/hashtag/EverGreen?src=hash&amp;ref_src=twsrc%5Etfw">#EverGreen</a> <a href="https://twitter.com/hashtag/EverGiven?src=hash&amp;ref_src=twsrc%5Etfw">#EverGiven</a> <a href="https://t.co/6krmFdXScW">pic.twitter.com/6krmFdXScW</a></p>&mdash; Bernie Blackburn (@bernieblac) <a href="https://twitter.com/bernieblac/status/1375136713887117313?ref_src=twsrc%5Etfw">March 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <div class="card">
-     <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/suez?src=hash&amp;ref_src=twsrc%5Etfw">#suez</a> is <a href="https://twitter.com/hashtag/lego?src=hash&amp;ref_src=twsrc%5Etfw">#lego</a> -blocked. <a href="https://t.co/KSchxseesO">pic.twitter.com/KSchxseesO</a></p>&mdash; Marcel Steeman (@msteeman) <a href="https://twitter.com/msteeman/status/1375171124875689986?ref_src=twsrc%5Etfw">March 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <div class="card">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Im looking forward to the upcoming childrens book The Little Excavator That Could. <a href="https://t.co/ySp7A77LDN">pic.twitter.com/ySp7A77LDN</a></p>&mdash; emily freeman (@editingemily) <a href="https://twitter.com/editingemily/status/1375039838328483842?ref_src=twsrc%5Etfw">March 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div> 
-  <div class="card">
-	<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Maybe the bus driver started a new career in shipping... <a href="https://t.co/EybQUnAFth">pic.twitter.com/EybQUnAFth</a></p>&mdash; Martin (@martin_quant) <a href="https://twitter.com/martin_quant/status/1374777317281701893?ref_src=twsrc%5Etfw">March 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
-  </div>
-  <div class="card">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is my favourite meme format in a long time <a href="https://t.co/p7XOuC43PU">pic.twitter.com/p7XOuC43PU</a></p>&mdash; Ben Harris-Roxas (@ben_hr) <a href="https://twitter.com/ben_hr/status/1374831222057144320?ref_src=twsrc%5Etfw">March 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <div class="card">
-    <blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/hNHqqFckEj">pic.twitter.com/hNHqqFckEj</a></p>&mdash; Bhangbhangduc (@bhangbhangducx) <a href="https://twitter.com/bhangbhangducx/status/1374629944953692160?ref_src=twsrc%5Etfw">March 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-</div>
-<p>And of course there is a song!</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">theres a ship stuck in the Suez Canal so <a href="https://twitter.com/WordKerfing?ref_src=twsrc%5Etfw">@WordKerfing</a> and i wrote a song for it <a href="https://twitter.com/hashtag/evergiven?src=hash&amp;ref_src=twsrc%5Etfw">#evergiven</a> <a href="https://t.co/ftDRhmrfvL">pic.twitter.com/ftDRhmrfvL</a></p>&mdash; janie jaffe (@janie_jaffe) <a href="https://twitter.com/janie_jaffe/status/1375155125895974915?ref_src=twsrc%5Etfw">March 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    Images from <a target="_blank" href="https://twitter.com/AirbusSpace">Airbus Space</a>
+    <div class="scrolling-wrapper">
+      <div class="scrollingcard">
+        <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus1.jpg">
+      </div>
+      <div class="scrollingcard">
+        <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus2.jpg">
+      </div>
+      <div class="scrollingcard">
+        <img style="max-width: 500px; height: auto; padding: 2em;" src="airbus3.jpg">
+      </div>
+    </div>
+    <h3>So many memes</h3>
 
-<h3>About</h3>
-<p>Just trying out <a target="_blank" href="https://caddyserver.com/">Caddy</a> as a webserver.</p>
-<p>You can find me on Twitter : <a target="_blank" href="https://twitter.com/drcursor">@drcursor</a></p>
-<p>And my personal page <a target="_blank" href="https://ebalsa.org">here</a></p>
+    <div class="scrolling-wrapper">
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I made this. It&#39;s for you. <a
+              href="https://t.co/WU4DzjTSUb">pic.twitter.com/WU4DzjTSUb</a></p>&mdash; Joe Streckert (@JoeStreckert) <a
+            href="https://twitter.com/JoeStreckert/status/1375129180883480578?ref_src=twsrc%5Etfw">March 25, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Todays Comic: We are all, in our own little way, that ship. <a
+              href="https://t.co/GVDjLxzErX">pic.twitter.com/GVDjLxzErX</a></p>&mdash; Chaz Hutton (@chazhutton) <a
+            href="https://twitter.com/chazhutton/status/1374688225516748801?ref_src=twsrc%5Etfw">March 24, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Having failed miserably with the cat, theyve now decided to give the dog a go! <a
+              href="https://twitter.com/hashtag/Suez?src=hash&amp;ref_src=twsrc%5Etfw">#Suez</a> <a
+              href="https://twitter.com/hashtag/SuezCrisis?src=hash&amp;ref_src=twsrc%5Etfw">#SuezCrisis</a> <a
+              href="https://twitter.com/hashtag/SuezBlocked?src=hash&amp;ref_src=twsrc%5Etfw">#SuezBlocked</a> <a
+              href="https://twitter.com/hashtag/SuezCanal?src=hash&amp;ref_src=twsrc%5Etfw">#SuezCanal</a> <a
+              href="https://twitter.com/hashtag/EverGreen?src=hash&amp;ref_src=twsrc%5Etfw">#EverGreen</a> <a
+              href="https://twitter.com/hashtag/EverGiven?src=hash&amp;ref_src=twsrc%5Etfw">#EverGiven</a> <a
+              href="https://t.co/6krmFdXScW">pic.twitter.com/6krmFdXScW</a></p>&mdash; Bernie Blackburn (@bernieblac) <a
+            href="https://twitter.com/bernieblac/status/1375136713887117313?ref_src=twsrc%5Etfw">March 25, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/suez?src=hash&amp;ref_src=twsrc%5Etfw">#suez</a>
+            is <a href="https://twitter.com/hashtag/lego?src=hash&amp;ref_src=twsrc%5Etfw">#lego</a> -blocked. <a
+              href="https://t.co/KSchxseesO">pic.twitter.com/KSchxseesO</a></p>&mdash; Marcel Steeman (@msteeman) <a
+            href="https://twitter.com/msteeman/status/1375171124875689986?ref_src=twsrc%5Etfw">March 25, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Im looking forward to the upcoming childrens book The Little Excavator That Could. <a
+              href="https://t.co/ySp7A77LDN">pic.twitter.com/ySp7A77LDN</a></p>&mdash; emily freeman (@editingemily) <a
+            href="https://twitter.com/editingemily/status/1375039838328483842?ref_src=twsrc%5Etfw">March 25, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Maybe the bus driver started a new career in shipping... <a
+              href="https://t.co/EybQUnAFth">pic.twitter.com/EybQUnAFth</a></p>&mdash; Martin (@martin_quant) <a
+            href="https://twitter.com/martin_quant/status/1374777317281701893?ref_src=twsrc%5Etfw">March 24, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">This is my favourite meme format in a long time <a
+              href="https://t.co/p7XOuC43PU">pic.twitter.com/p7XOuC43PU</a></p>&mdash; Ben Harris-Roxas (@ben_hr) <a
+            href="https://twitter.com/ben_hr/status/1374831222057144320?ref_src=twsrc%5Etfw">March 24, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="scrollingcard">
+        <blockquote class="twitter-tweet">
+          <p lang="und" dir="ltr"><a href="https://t.co/hNHqqFckEj">pic.twitter.com/hNHqqFckEj</a></p>&mdash;
+          Bhangbhangduc (@bhangbhangducx) <a
+            href="https://twitter.com/bhangbhangducx/status/1374629944953692160?ref_src=twsrc%5Etfw">March 24, 2021</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <h3>And of course there is a song!</h3>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">theres a ship stuck in the Suez Canal so <a
+          href="https://twitter.com/WordKerfing?ref_src=twsrc%5Etfw">@WordKerfing</a> and i wrote a song for it <a
+          href="https://twitter.com/hashtag/evergiven?src=hash&amp;ref_src=twsrc%5Etfw">#evergiven</a> <a
+          href="https://t.co/ftDRhmrfvL">pic.twitter.com/ftDRhmrfvL</a></p>&mdash; janie jaffe (@janie_jaffe) <a
+        href="https://twitter.com/janie_jaffe/status/1375155125895974915?ref_src=twsrc%5Etfw">March 25, 2021</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<a target="_blank" href="https://github.com/drcursor/isitstillstuck">Fork me on GitHub</a> - Want to add information or fix this horrible 90's HTML ? Contributions will be synced back to this site.</a>
+    <h3>About</h3>
+    <p>Just trying out <a target="_blank" href="https://caddyserver.com/">Caddy</a> as a webserver.</p>
+    <p>You can find me on Twitter : <a target="_blank" href="https://twitter.com/drcursor">@drcursor</a></p>
+    <p>And my personal page <a target="_blank" href="https://ebalsa.org">here</a></p>
 
-<p>All images, photos, trademarks and any other information are used here under fair use. I do not claim any ownership or copyright over any of them. Please <a href="https://ebalsa.org/contact/">contact me</a> if you want your copyrighted work removed.</p>
+    <a target="_blank" href="https://github.com/drcursor/isitstillstuck">Fork me on GitHub</a> - Want to add information
+    or fix this horrible 90's HTML ? Contributions will be synced back to this site.</a>
+
+    <p>All images, photos, trademarks and any other information are used here under fair use. I do not claim any
+      ownership or copyright over any of them. Please <a href="https://ebalsa.org/contact/">contact me</a> if you want
+      your copyrighted work removed.</p>
+
+    <p>Additional contributions by: <a href="https://github.com/kirrus">Kirrus</a>, <a href="https://twitter.com/rnelson0">Rob Nelson</a>, <a href="https://twitter.com/Welcometobrokar">Garm</a></p>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
