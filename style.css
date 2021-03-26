@@ -1,0 +1,68 @@
+@font-face {
+	font-family: Lato;
+	src: url(lato.ttf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(lato_black.ttf);
+	font-weight: bold;
+}
+
+.share {
+	height: 28px;
+}
+.hero {
+	margin: 6em 0;
+	text-align: center;
+}
+.answer {
+	font-size: 60px;
+}
+.subtitle {
+	font-weight: normal;
+}
+.photo-desc {
+	color: rgb(80, 80, 80);
+}
+.photo {
+	text-align: center;
+}
+.timeline {
+	text-align: center;
+}
+
+.articles {
+	display: flex;
+	list-style-type: none;
+	padding-left: 0;
+	flex-wrap: wrap;
+}
+.articles li {
+	font-size: large;
+	flex: 1;
+	margin: 1em;
+	min-width: 350px;
+}
+
+img {
+	max-width: 100%;
+	height:	auto;
+}
+a, a:visited {
+	color: rgb(0, 106, 226);
+	text-decoration: none;
+}
+
+html {
+	font-family: Lato, Roboto, sans-serif;
+}
+
+body {
+	margin: 0 20% 3em;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin: 0 2em;
+	}
+}
